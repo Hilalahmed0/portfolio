@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
+    /* font-family: 'Source Code Pro', monospace; */
+}
+.container{
+    display: flex;
+
+}
+.slider{
+    background-color:rgb(226, 225, 225);
+    height: 100vh;
+    position: absolute;
+    text-align: center;
+    
+  transition:transform 0.3s ease-in ;
+}
+.slider nav{
+        padding: 25px;
+}
+.slider nav li{
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 27px 0;
+    
+}
+.slider nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    /* background-color: rgb(255, 238, 0); */
+    padding: 23px;
+    width: 90vw;
+}
+.infocontainer{
+    /* background-color: bisque; */
+    height: 55vh;
+    width: 80vw;
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.divinfo{
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+}
+.hello{
+    font-size: 2.5em;
+}
+.name{
+    font-size: 2.6em;
+    font-weight: bold;
+}
+.about{
+    font-size: 2em;
+}
+.moreabout{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.btn button{
+ height: 2.3rem;
+ border: 1px solid black;
+ border-radius: 15px;
+ font-size: 1em;
+ color: black;
+ margin: 10px 5px;
+ background-color: rgb(72, 198, 200) ;
+ cursor: pointer;
+ width: 10vw
+}
+
+.btn button:hover{
+    background-color: rgb(73, 165, 167);
+    color: gainsboro;
+    border: none;
+}
+
+.divpic img{
+  height: 50vh;
+  width: 360px;
+}
+.contactform{
+ padding: 2rem 4rem;
+}
+.contactform h1{
+ font-size: 2em;
+ 
+
+}
+.contactform form div{
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+#emailHelp{
+    font-size: 1rem;
+    color: rgb(179, 73, 73);
+    margin: 0 5px;
+    font-weight: bold;
+}
+.contactform form .form-control{
+   width: 35vw;
+    border-radius: 6px;
+    height: 4vh;
+    font-size: .9rem;
+    padding: 5px;
+    margin: 7px 0;
+}
+.contactform form .form-label{
+    font-size: 1.2rem;
+    margin-top: 7px;
+}
+.contactform form .check{
+   display: flex;
+   flex-direction: row;
+}
+.contactform form .form-check-input{
+ margin: 5px 10px;
+} 
+.contactform form .form-check-label{
+    font-size: 1rem;
+    color: rgb(179, 73, 73);
+    margin: 0 5px;
+    font-weight: bold;
+}
+.btn-sm{
+    height: 2rem;
+    border-radius: 17px;
+    font-size: .8rem;
+    color: black;
+    margin: 10px 5px;
+    background-color: rgb(111, 219, 221) ;
+    cursor: pointer;
+    width: 7vw
+}
+ .btn-sm:hover{
+    background-color:rgb(39, 210, 212) ;
+    color: white;
+    border: none;
+}
+ h1{
+    text-transform: uppercase;
+    margin: 20px;
+    font-size: 2rem;
+}
+.blogitem{
+ margin: 20px;
+}
+ h2{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin: 10px;
+}
+ p{
+    margin: 10px;
+    font-size: .8rem;
+}
+.skillcontainer{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1em;
+}
+.skillitem{
+    display: flex;
+  align-items: center;
+  padding-top: 10px;
+  
+}
+.skill{
+    width: 180px;
+    height: 10px;
+    background-color: red;
+    border-radius: 4px;
+
+    border-right: 1px solid black;   
+    
+
+    
+}
+.skillbox{
+    width: 220px;
+    height: 14px;
+    background-color: rgb(255, 243, 227);
+    border-radius: 6px;
+    border: 2px solid black;   
+    margin-left: 10px;
+    align-items: center;
+    display: flex;
+    
+    
+
+}
+.eight{
+    width: 190px;
+    background-color: darkblue;
+}
+.five{
+  background-color: lightcoral;
+    width: 140px;
+}
+.four{
+    width: 110px;
+    background-color: mediumseagreen;
+}
+.two{
+    background-color: fuchsia;
+    width: 70px;
+}
+.close{
+    margin-left: 150px;
+    border-radius: 50px;
+
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top:8px;
+    left: 10px;
+
+}
+.slidergo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+} 
+
+@media screen and  (max-width: 600px) { 
+  /* .slider{
+      transform: translate(-443px, 0px);
+      position: absolute;
+  } */
+  .divpic{
+      display: none;
+  }
+  .blogcontainer, .contactform{
+      margin: 10px;
+      padding: 5px;
+  }
+  .btn button{
+    width: 35vw;
+    font-size: 0.8em;
+  }
+  .btn{
+      display: flex;
+      flex-direction: column;
+ 
+    }
+    .btn-sm{
+        width: 5rem;
+        padding: 1px;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7em;
+    }
+    .contactform form .form-control{
+        width: 60vw;
+    }
+    .contactform form .form-label{
+        margin-top: 3px;
+    }
+    .skillcontainer{
+     
+    }
+    .skillbox{
+        width: 195px;
+        height: 14px;
+        background-color: rgb(255, 243, 227);
+        border-radius: 6px;
+        border: 2px solid black;   
+       
+        align-items: center;
+        display: flex;
+        }
+      
+}
